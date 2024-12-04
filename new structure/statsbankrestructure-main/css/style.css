@@ -1,0 +1,194 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  :root{
+    --primary:#3730a3;
+    --primary-light: #e0e7ff;
+  }
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* This ensures the content occupies the full height of the container */
+}
+
+
+.primary{
+    background-color: var(--primary) !important;
+}
+.primary-light{
+    background-color: var(--primary-light) !important;
+    color: var(--primary) !important;
+}
+.text-primary, .tp{color: var(--primary) !important;}
+a{font-size: 0.8rem !important;text-transform: uppercase;}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:3rem;
+    padding: 1rem 10%;
+    z-index: 30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.side{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 300px;
+    padding: 2rem;
+    height: calc(100vh - 90px);
+}
+.home_button , .home_input{
+    height: 3rem;
+    padding: 1.5rem;
+    border-radius: 5rem !important;
+}
+.home_input{width: 100%;border: 0.1rem solid #ddd;}
+.important{
+    position: relative;
+}
+.important::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.2rem;
+    width: 2rem;
+    padding: 0.1rem;
+    background-color: var(--primary);
+}
+.content{
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: calc(100vw - 300px);
+    padding: 2rem;
+}
+.button , input{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 0.8rem !important;
+    text-transform: uppercase;
+}
+.home{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-flex{
+    gap: 1rem;
+    justify-content: space-between;
+    
+}
+
+._card{
+    box-shadow: 0 2rem 10rem -6rem #6f65ff;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+}
+._cardinfo{
+    padding: 2rem;
+}
+
+
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position the modal */
+    z-index: 1; /* Ensure it appears above other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Center the modal vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    padding: 10px; 
+    font-weight: bold !important;
+}
+
+.modal-content p {
+    font-size: 16px; 
+    margin-bottom: 8px; 
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+/* Footer Styling */
+
+.footer {
+    background-color: transparent; /* Makes the background transparent */
+    text-align: center; /* Centers the content */
+    padding: 20px; /* Adds some space inside the footer */
+    font-size: 14px; /* Adjusts the font size */
+    color: #333; /* Sets a neutral text color for readability */
+}
+
+.footer a {
+    color: #0066cc; /* Links in a blue color */
+    text-decoration: none; /* Removes the underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
